@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur d'empreinte carbone de site web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculateur">
+            <h1>Calculez l'empreinte carbone de votre site web</h1>
+            
+            <label for="videos">Nombre de vidéos sur le site :</label>
+            <input type="number" id="videos" placeholder="Entrez le nombre de vidéos">
+            
+            <label for="NRJServeur">Consommation d'énergie du serveur :</label>
+            <input type="number" id="NRJServeur" placeholder="Valeur attendue en kWh">
+            
+            <label for="cpu">CPU :</label>
+            <input type="number" id="cpu" placeholder="Valeur attendue en watts">
+            
+            
+            <button id="btn" onclick="calculEmpreinteCarbone()">Calculer</button>
+
+            <p id="result">L'empreinte carbone du site web est : <span id="EmpreinteCarbone">0</span> kg CO2</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
